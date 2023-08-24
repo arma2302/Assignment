@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Module-1-HTML</title>
+    <style>
+      body{
+        margin: 0;
+        padding: 0;
+       background: rgb(129,126,131);
+background: linear-gradient(90deg, rgba(129,126,131,1) 0%, rgba(220,122,164,1) 50%, rgba(223,219,219,1) 100%);
+overflow-x: hidden;
+      }
+      h1 {
+        text-align: center;
+      }
+     hr{
+      color: rgb(0, 0, 0);
+     }
+    </style>
+  </head>
+  <body>
+    <h1>Module (HTML) -1</h1>
+    <!-- Q-1 -->
+    <h2>1.Are the HTML tags and elements the same thing?</h2>
+    <p>
+      HTML tag is just opening or closing entity. For example: &lt;p&gt; and&lt;/p&gt; are called HTML tags: HTML element encompasses opening tag, closing tag, content (optional for content-less tags) Eg: &lt;p&gt;This is the
+      content&lt;/p&gt;: This complete thing is called a HTML element
+    </p>
+    <hr>
+    <!-- Q-2 -->
+    <h2>2.What are tags and attributes in HTML?</h2>
+    <p>HTML Tags: Tags are the starting and ending parts of an HTML element. They begin with < symbol and end with > symbol. Whatever written inside &lt;and &gt; are called tags.</p>
+    <p>For Example:<b> &lt;b&gt;&lt;/b&gt;</b></p>
+
+    <p>HTML Attributes: It is used to define the character of an HTML element. It always placed in the opening tag of an element. It generally provides additional styling (attribute) to the element.</p>
+    <p>For Example:<b> &lt;p align="center"&gt;</b>This is paragraph. &lt;/p&gt;</p>
+    <hr>
+    <!-- Q-3 -->
+    <h2>What are void elements in HTML?</h2>
+    <pre>
+A void element is an element in HTML that cannot have any child nodes (i.e., nested elements or text nodes). Void elements only have a start tag; end tags must not be specified for void elements.
+
+In HTML, a void element must not have an end tag. For example, &lt;input type="text"&gt;&lt;/input &gt; is invalid HTML. In contrast, SVG or MathML elements that cannot have any child nodes may use an end tag instead of XML self-closing-tag syntax in their start tag.
+
+The HTML, SVG, and MathML specifications define very precisely what each element can contain. So, some combinations of tags have no semantic meaning.
+
+Although there is no way to mark up a void element as having any children, child nodes can be added programmatically to the element in the DOM using JavaScript. But that is not a good practice, as the outcome will not be reliable.
+
+The void elements in HTML are as follows:
+
+&lt;base>
+&lt;area&gt;
+&lt;col>
+&lt;br&gt;
+&lt;embed&gt;
+&lt;hr&gt;
+&lt;img&gt;
+&lt;input&gt;
+&lt;link&gt;
+&lt;meta&gt;
+&lt;param&gt; Deprecated
+&lt;source&gt;
+&lt;track&gt;
+&lt;wbr&gt;</pre
+    >
+    <hr>
+    <!-- Q-4 -->
+    <h2>What are HTML Entities?</h2>
+    <p>
+      An HTML entity is a piece of text ("string") that begins with an ampersand (&) and ends with a semicolon (;). Entities are frequently used to display reserved characters (which would otherwise be interpreted as HTML code), and
+      invisible characters (like non-breaking spaces). You can also use them in place of other characters that are difficult to type with a standard keyboard.
+    </p>
+    <p>
+      Reserved characters Some special characters are reserved for use in HTML, meaning that your browser will parse them as HTML code. For example, if you use the less-than (<) sign, the browser interprets any text that follows as a tag.
+      To display these characters as text, replace them with their corresponding character entities, as shown in the following table.
+    </p>
+    <table
+      border=""
+      cellspacing="0"
+      width="100%
+    "
+      height="500"
+      cellpadding="10"
+    >
+      <tr>
+        <th>Entity</th>
+
+        <th>Note</th>
+      </tr>
+      <tr>
+        <td>&amp;</td>
+        <td>Interpreted as the beginning of an entity or character reference.</td>
+      </tr>
+      <tr>
+        <td>&lt;</td>
+        <td>Interpreted as the beginning of a tag</td>
+      </tr>
+      <tr>
+        <td>&gt;</td>
+        <td>Interpreted as the ending of a tag</td>
+      </tr>
+      <tr>
+        <td>&quot;</td>
+        <td>Interpreted as the beginning and end of an attribute's value.</td>
+      </tr>
+      <tr>
+        <td>&quot;</td>
+        <td>Interpreted as the beginning and end of an attribute's value.</td>
+      </tr>
+      <tr>
+        <td>&ndash;</td>
+        <td>Interpreted as the em dash (equal to width of an "m" character)</td>
+      </tr>
+    </table>
+    <hr>
+    <!-- Q-5 -->
+    <h2>What are different types of lists in HTML?</h2>
+    <p>
+      A list is a record of short pieces of related information or used to display the data or any information on web pages in the ordered or unordered form. For instance, to purchase the items, we need to prepare a list that can either be
+      ordered or unordered list which helps us to organize the data & easy to find the item. Please refer to the HTML &lt;li&gt; type Attribute article for the various types of attributes that can be used with the ordered & unordered list.
+    </p>
+    <p>The HTML Unordered List: An unordered list starts with the “ul” tag. Each list item starts with the “li” tag. The list items are marked with bullets i.e small black circles by default.</p>
+    <p>HTML Ordered List: An ordered list starts with the “ol” tag. Each list item starts with the “li” tag. The list items are marked with numbers by default.</p>
+    <p>
+      For eaxmple:
+      <iframe src="List.html" frameborder="0" width="100%" height="500"></iframe>
+    </p><hr>
+    <!-- Q-6 -->
+    <h2>What is the <q>classs</q> attribute in HTML?</h2>
+    <p>
+      The class global attribute is a space-separated list of the case-sensitive classes of the element. Classes allow CSS and JavaScript to select and access specific elements via the class selectors or functions like the DOM method doc
+      ument.getElementsByClassName.
+    </p><hr>
+    <!-- Q-7-->
+    <h2>What are the various formatting tags in HTML?</h2>
+    <p>
+      HTML provides many predefined elements that are used to change the formatting of text. The formatting can be used to set the text styles (like – bold, italic, or emphasized, etc.), highlight the text, make text superscript and
+      subscript, etc.
+    </p>
+    <p><img src="https://image.slidesharecdn.com/htmlintrowithbasics-140902231824-phpapp01/95/html-basic-tags-17-638.jpg?cb=1409700053" alt="Formatting-tags-list" width="" height="400" /></p><hr>
+    <!-- Q-8 -->
+    <h2>How is Cell Padding different from Cell Spacing?</h2>
+    <pre>
+What is Cellpadding?
+It only associates with individual (single) cells.
+Using Cellpadding, one can easily control the white space present between a cell border and the content present in it.
+It is a very effective method.
+It has a default value of 1.
+One can create Cellpadding using the tag of HTML &lt;table&gt;
+Here, we set the type of attribute to cellpadding.
+What is Cellspacing?
+It associates with multiple cells- not just a single one.
+Using Cellspacing, you can set the spaces between various cells.
+It is comparatively less effective than the process of cell padding.
+In this case, the spacing value by default becomes 2.
+One can easily create Cellspacing by using the tag of HTML  &lt;/table&gt;
+Here, we set the type of attribute to cellspacing.</pre
+    ><hr>
+    <!-- Q-9 -->
+    <h2>How can we club two or more rows or columns into a single row or column in an HTML table?</h2>
+    <iframe src="row-column-span.html" frameborder="0" width="100%" height="500"></iframe>
+    <hr>
+    <h2>What is the difference between a block-level element and an inline element?</h2>
+    <p>
+      The inline and block elements of HTML are one of the important areas where web developers often get confused because they were unable to know which are inline and block elements which may cause clumsiness in a webpage in case he
+      assumes some element to be a block but it is an inline element which causes next element comes next to it. So let us see the differences between the inline and block elements in HTML and the different frequently used inline and
+    </p>
+    <p>
+      <strong>Block HTML elements. </strong>Block elements: They consume the entire width available irrespective of their sufficiency. They always start in a new line and have top and bottom margins. It does not contain any other elements
+      next to it.
+    </p><hr>
+    <!-- Q-10 -->
+    <h2>How to create a Hyperlink in HTML?</h2>
+    <p>
+      What is a hyperlink? Hyperlinks are one of the most exciting innovations the Web has to offer. They've been a feature of the Web since the beginning, and are what makes the Web a web. Hyperlinks allow us to link documents to other
+      documents or resources, link to specific parts of documents, or make apps available at a web address. Almost any web content can be converted to a link so that when clicked or otherwise activated the web browser goes to another web
+      address (URL).
+    </p><hr>
+    <!-- Q-11 -->
+    <h2>What is the use of an iframe tag?</h2>
+    <p>
+      we will know HTML Iframes, their implementation through the examples. The iframe in HTML stands for Inline Frame. The ” iframe ” tag defines a rectangular region within the document in which the browser can display a separate
+      document, including scrollbars and borders. An inline frame is used to embed another document within the current HTML document. The HTML iframe name attribute is used to specify a reference for an element. The name attribute is also
+      used as a reference to the elements in JavaScript. The iframe is basically used to show a webpage inside the current web page. The ‘ src ‘ attribute is used to specify the URL of the document that occupies the iframe.
+    </p><hr>
+    <!-- Q-12 -->
+    <h2>What is the use of a span tag? Explain with example?</h2>
+    <p><span> HTML element is a generic inline container for phrasing content, which does not inherently represent anything. It can be used to group elements for styling purposes (using the class or id attributes), or because they share attribute values, such as lang. It should be used only when no other semantic element is appropriate.<strong>&lt;span&gt; is very much like a &lt;/Div&gt;  element, but &lt;/div&gt;  is a block-level element whereas a  &lt;/span&gt; is an inline-level element. </strong> </strong> </p><hr>
+        <!-- Q-13 -->
+        <h2>How to insert a picture into a background image of a web page? </h2>
+        <p> we will be adding an image as the background image of a web page. Background images are used to make a website more interactive and attractive. It can be applied in many stylings.</p>
+        <iframe src="background-image.html" frameborder="0" width="100%" height="500"></iframe><hr>
+        <!-- Q-14 -->
+        <h2>How are active links different from normal links?  </h2>
+        <p>Websites are designed to point you to different resources. You can move from one website to another through links. Links help you to get information from different resources. Links are established in simple HTML web pages through <a> tag.
+Links are categorized into three types. Typically a Link is displayed in three different colors based on the usage.
+
+-Normal links (Unvisited links)
+-Visited links
+- Active links</p><hr>
+<!-- Q-15 -->
+<h2>What are the different tags to separate sections of text? </h2>
+<p>
+Three tags are used to separate the texts.
+
+<strong>br</strong> tag - Usually &lt;br&gt; tag is used to separate the line of text. It breaks the current line and conveys the flow to the next line
+
+<strong>p</strong> tag - The &lt;p&gt;  tag contains the text in the form of a new paragraph.
+
+<strong>blockquote</strong> tag - It is used to define a large quoted section. If you have a large quotation, then put the entire text within <blockquote>.............</blockquote> tag.</p><hr>
+<!-- Q-16 -->
+<h2>What is SVG?  </h2>
+<p>SVG stands for Scalable Vector Graphic. It can be used to make graphics and animations like in HTML canvas. It is a type of vector graphic that may be scaled up or down. SVG is a web standard for vector-based graphics. It basically defines vector-based graphics in XML format. SVG graphics do NOT lose any quality if they are zoomed or resized.</p><hr>
+<!-- Q-17 -->
+<h2> What is difference between HTML and XHTML?  </h2>
+<p>What is XHTML?
+XHTML stands for extensible hypertext markup language which is a connection between HTML (hypertext mark-up language) and XML (extensible markup language) also at most of the places XHTML is considered superior than HTML.
+
+XHTML is easy to use with other data formats, and it creates more neat code as it is stricter than HTML. Therefore, it is more compatible with most browsers, and it maintains a standard of code that can be used for various devices.</p>
+<p>Hypertext Mark-up Language (HTML) is a programming language that shows information and depicts a site page's design. Hypertext works with perusing the web by referring to an HTML page's hyperlinks. The hyperlink empowers one to go to any put on the web by clicking it. There is no set request to do as such.
+
+Mark-up language calls attention to how labels characterize the page design and the components inside the page. It comprises different HTML components containing labels and their substance. HTML language empowers the formation of connections of reports, is static, and can overlook little mistakes. In HTML, shutting labels are excessive. It tends to be characterized as a markup language that makes the content unique and intelligent.
+
+HTML is a programming language used to make sites that anybody with web access can see. The labels are the words between the < angle brackets > and separate standard content from HTML code. These are shown on website pages as pictures, tables, outlines, etc.
+
+The labels are not shown on the pages however influence the presence of information on site pages. Various sorts of tags perform various capacities.</p><hr>
+<!-- Q-18 -->
+<h2> What are logical and physical tags in HTML?</h2>
+<p>For example, the &lt;strong&gt; tag is a logical tag that indicates that the text within it should be displayed as bold, while the &lt;b>&gt;tag is a physical tag that also causes the text within it to be displayed as bold.
+
+In general, it is recommended to use logical tags over physical tags because they provide better accessibility, i.e. they make it easier for users who rely on assistive technologies like screen readers to understand the content and navigate the document. Additionally, logical tags allow for greater flexibility in terms of presentation, as the presentation can be changed using CSS without altering the underlying HTML markup.
+
+</p>
+  </body>
+</html>
