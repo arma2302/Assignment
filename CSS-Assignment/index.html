@@ -4,8 +4,46 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CSS Assignment</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        background-color: rgb(138, 205, 224);
+        padding: 20px;
+      }
+      p,
+      h3,
+      h2,
+      iframe {
+        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+        padding: 20px;
+      }
+      h2 {
+        color: aliceblue;
+        margin-top: 20px;
+      }
+      .cssrule {
+        width: 50%;
+        height: auto;
+        margin: 0 auto;
+      }
+      hr {
+        margin: 20px;
+        border-bottom: 1.5px groove black;
+      }
+      h1 {
+        text-align: center;
+        text-transform: capitalize;
+        color: #111;
+        font-size: 60px;
+      }
+    </style>
   </head>
   <body>
+    <h1>CSS assignment</h1>
     <h2>Q-1: What are the benefits of using CSS?</h2>
     <p>1) Faster Page Speed More code means slower page speed. And CSS enables you to use less code. CSS allows you to use one CSS rule and apply it to all occurrences of a certain tag within an HTML document.</p>
     <p>2) Better User Experience CSS not only makes web pages easy on the eye, it also allows for user-friendly formatting. When buttons and text are in logical places and well organized, user experience improves.</p>
@@ -64,7 +102,7 @@
     <hr />
     <h2>How can the background color of an element be changed?</h2>
     <p>You can change the background color of an HTML element using the background-color CSS property and giving it a value of a color.</p>
-    <iframe src="backgroundcolor.html" frameborder="0" height="300" width="300px"></iframe>
+    <iframe src="backgroundcolor.html" frameborder="0" height="auto" width="300px"></iframe>
     <hr />
     <h2>How can image repetition of the backup be controlled?</h2>
     <p>we can controll iamge repeatatio by using background-repeat:no-repeat; property.</p>
@@ -73,7 +111,7 @@
     <h2>What is the use of the background-position property?</h2>
     <p>Background-position propert is used to apply position to a background-image.</p>
     <iframe src="bg-position.html" frameborder="0" width="100%" height="500px"></iframe>
-    <hr />
+    <!-- <hr /> -->
     <h2>Which property controls the image scroll in the background?</h2>
     <p>
       background-attachment: fixed; <br />
@@ -81,10 +119,11 @@
     </p>
     <iframe src="bg-fixed.html" frameborder="0" width="100%" height="500px"></iframe>
     <hr />
-
+    <!--  -->
     <h2>Why should background and color be used as separate properties?</h2>
     <p>The reasons for this are as follows: - It increases the legibility of the style sheets. The background property is a complex property in CSS. If it is combined with color, the complexity will further increase.</p>
     <hr />
+    <!--  -->
     <h2>How to center block elements using CSS1?</h2>
     <p>
       By Using Margin property we can align an element center.
@@ -97,22 +136,16 @@
     <h2>How to maintain the CSS specifications?</h2>
     <p>
       If you've followed this series from the beginning , we discussed about the HTML Specification which is sort of a rule book that tells browser vendors how to implement HTML Elements and Tags. The CSS Specification is no different but
-      with a different approach with the advent of CSS3. <br />
-
-      The Specification defines how CSS properties should be implemented by browser vendors along with detailed algorithms, code samples and tabular information. <br />
-      <br />
-      <br />
-
-      <h3>The Specification also include: </h3> <br />
-
-      The syntax and data types of the language <br />
-      Detailed explanation on CSS Selectors <br />
-      How you can assign values to properties <br />
-      The Cascade (the "C" in CSS) <br />
-      How inheritance works <br />
-      The Box Model e.t.c
+      with a different approach with the advent of CSS3.
     </p>
+
+    <p>The Specification defines how CSS properties should be implemented by browser vendors along with detailed algorithms, code samples and tabular information.</p>
+
+    <h3>The Specification also include:</h3>
+
+    <p>The syntax and data types of the language Detailed explanation on CSS Selectors How you can assign values to properties The Cascade (the "C" in CSS) How inheritance works</p>
     <hr />
+    <!--  -->
     <h2>What are the ways to integrate CSS as a web page?</h2>
     <p>
       CSS is used for styling the look and formatting of a document written in HTML. There are three ways to add CSS in HTML <br />
@@ -123,12 +156,66 @@
       External CSS: Styles defined in a separate file.
     </p>
     <hr />
+    <!--  -->
     <h2>What is embedded style sheets?</h2>
-    <p>Embedded style sheets refer to when you embed style sheet information into an HTML document using the &gt;style&lt; element. You do this by embedding the style sheet information within  &gt;style&lt; &gt;/style&lt;tags in the head of your document.
+    <p>
+      Embedded style sheets refer to when you embed style sheet information into an HTML document using the &lt;style&gt; element. You do this by embedding the style sheet information within &lt;style&gt; &lt;/style&gt;tags in the head of
+      your document.
+    </p>
 
-<h3>Syntax</h3>
-The CSS syntax for embedded style sheets is exactly the same as other CSS code.
+    <h3>Syntax</h3>
 
-For example, to use the following code, simply place it between the  &gt;head&lt; &gt;/head&lt; tags of your HTML document:</p>
+    <p>The CSS syntax for embedded style sheets is exactly the same as other CSS code. For example, to use the following code, simply place it between the &lt;head&gt; &lt;/head&gt; tags of your HTML document:</p>
+    <hr />
+    <!--  -->
+    <h2>What are the external style sheets?</h2>
+    <p>
+      An external style sheet is a separate file linked to an HTML web page. It comes with a .css filename extension. All the styles that need to be used on a website can be declared in the external style sheet. External style sheets are an
+      important tool from the webmaster’s perspective.
+    </p>
+    <hr />
+    <!--  -->
+    <h2>What are the advantages and disadvantages of using external style sheets?</h2>
+
+    <h3>The disadvantages of External Style Sheets are:</h3>
+    <p>
+      - In order to import style information for each document, an extra download is needed. <br />
+      - Until the external style sheet is loaded, it may not be possible to render the document. <br />
+      - For small number of style definitions, it is not viable.
+    </p>
+    <hr />
+    <!--  -->
+    <h2>What is the meaning of the CSS selector?</h2>
+    <h3>CSS selectors are used to select the content you want to style. Selectors are the part of CSS rule set. CSS selectors select HTML elements according to its id, class, type, attribute etc.</h3>
+    <h4>There are several different types of selectors in CSS.</h4>
+
+    <p>
+      Element Selector <br />
+      CSS Id Selector <br />
+      CSS Class Selector <br />
+      CSS Universal Selector CSS Group Selector
+    </p>
+    <hr />
+    <!--  -->
+    <h2>What are the media types allowed by CSS?</h2>
+    <p>
+      One of the most important features of style sheets is that they specify how a document is to be presented on different media: on the screen, on paper, with a speech synthesizer, with a braille device, etc. Certain CSS properties are
+      only designed for certain media (e.g., the 'page-break-before' property only applies to paged media). On occasion, however, style sheets for different media types may share a property, but require different values for that property.
+      For example, the 'font-size' property is useful both for screen and print media. The two media types are different enough to require different values for the common property; a document will typically need a larger font on a computer
+      screen than on paper. Therefore, it is necessary to express that a style sheet, or a section of a style sheet, applies to certain media types.
+    </p>
+    <hr />
+    <!--  -->
+    <h2>What is the rule set?</h2>
+    <p>
+      A CSS ruleset is various affirmations to various pieces or elements of the document. The objective is to apply a bunch of properties for certain distinct qualities to a solitary, or a particular arrangement of components in the
+      connected HTML page.
+    </p>
+
+    <div class="cssrule"><img src="CSSrulesetImage.png" alt="" /></div>
+    <hr />
+    <!--  -->
+    <h2>Create Layouts :</h2>
+    <iframe src="layouts.html" frameborder="0" width="100%" height="500"></iframe>
   </body>
 </html>
