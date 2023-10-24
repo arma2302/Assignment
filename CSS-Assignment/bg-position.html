@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      div[class*="box"] {
+        background-image: url(swirls-8302543_1280.jpg);
+        width: 300px;
+        height: 300px;
+      }
+      .main {
+        width: 100%;
+      }
+      .box1 {
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+    </style>
+  </head>
+  <body>
+    beforre
+    <div class="main"><div class="box"></div></div>
+
+    After
+    <div class="main"><div class="box1"></div></div>
+  </body>
+</html>
