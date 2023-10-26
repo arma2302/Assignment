@@ -11,9 +11,13 @@
         padding: 0;
         box-sizing: border-box;
       }
+      body {
+        background-color: #fff;
+      }
       header {
-        background: url(Background.png) no-repeat center center/cover;
+        background: url(images/Background.png) no-repeat center center/cover;
         clip-path: polygon(0 0, 0 87%, 50% 100%, 100% 86%, 100% 0);
+        position: relative;
       }
       .container {
         width: 80%;
@@ -113,6 +117,70 @@
         background: transparent;
         border: 1px solid #fff;
       }
+      section {
+        /* padding: 20px; */
+        margin-top: 30px;
+      }
+      .row {
+        display: flex;
+        align-items: center;
+        gap: 50px;
+        justify-content: space-between;
+      }
+      .col-25 {
+        width: 23%;
+      }
+      .single-box {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+      }
+      .line {
+        width: 41px;
+        height: 1px;
+        background-color: #f4f5f9;
+        border: 3px solid #6a6a6a;
+      }
+      .icon-box {
+        opacity: 0.251;
+        width: 73px;
+        height: 73px;
+        border-radius: 2px;
+        /* background-color: #45576e; */
+        border: 1px solid #999999;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .single-box p {
+        font-size: 12px;
+        letter-spacing: 1px;
+        line-height: 20px;
+        color: #999999;
+        font-weight: 300;
+        font-family: "Source Sans Pro";
+        text-align: center;
+        width: 255px;
+        height: 70px;
+      }
+      .single-box h3 {
+        font-size: 18px;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        color: #e74c3c;
+        font-weight: 600;
+        font-family: "Open Sans";
+      }
+      .down-icon {
+        position: absolute;
+        position: absolute;
+        bottom: 50%;
+        left: 50%;
+        top: 70%;
+        transform: translate(-50%, -50%);
+      }
     </style>
   </head>
   <body>
@@ -121,7 +189,7 @@
       <div class="container">
         <!-- navbar with logo and navs -->
         <div class="navbar">
-          <div class="logo"><img src="Logo (1).png" alt="" /></div>
+          <div class="logo"><img src="images/Logo (1).png" alt="" /></div>
           <nav>
             <a href="">Home</a>
             <a href="">About us</a>
@@ -148,6 +216,43 @@
         </div>
       </div>
     </header>
+    <div class="down-icon"><img src="images/Down Icon.png" alt="" /></div>
     <!-- main-banner -->
+    <section>
+      <div class="container">
+        <div class="row">
+          <!-- 1 -->
+          <div class="col-25 single-box">
+            <div class="icon-box"><img src="images/1 (1).png" alt="" /></div>
+            <h3>SLEEK DESIGN</h3>
+            <div class="line"></div>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting let. Lorem Ipsum has been the industry.</p>
+          </div>
+          <!-- 2 -->
+          <div class="col-25 single-box">
+            <div class="icon-box"><img src="images/2 (1).png" alt="" /></div>
+            <h3>CLEAN CODE</h3>
+            <div class="line"></div>
+            <div class="text">
+              <p>Lorem Ipsum is simply dummy text of the printing and typesetting let. Lorem Ipsum has been the industry.</p>
+            </div>
+          </div>
+          <!-- 3 -->
+          <div class="col-25 single-box">
+            <div class="icon-box"><img src="images/3 (1).png" alt="" /></div>
+            <h3>CREATIVE IDEAS</h3>
+            <div class="line"></div>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting let. Lorem Ipsum has been the industry.</p>
+          </div>
+          <!-- 4 -->
+          <div class="col-25 single-box">
+            <div class="icon-box"><img src="images/4 (1).png " alt="" /></div>
+            <h3>FREE SUPPORT</h3>
+            <div class="line"></div>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting let. Lorem Ipsum has been the industry.</p>
+          </div>
+        </div>
+      </div>
+    </section>
   </body>
 </html>
