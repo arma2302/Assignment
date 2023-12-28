@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>javaScript Assignment</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        background-color: #95606b;
+      }
+      img {
+        width: 100%;
+      }
+      .img-box {
+        width: 300px;
+        /* margin: 0 auto; */
+      }
+      section {
+        padding: 20px;
+        width: 800px;
+        margin: 0 auto;
+      }
+      div {
+        margin-bottom: 20px;
+      }
+      .imgs-wrap {
+        display: flex;
+      }
+      p {
+        font-size: 16px;
+        padding: 20px;
+        background-color: rgba(0, 0, 0, 0.457);
+        color: #ffffff80;
+        margin-top: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <section>
+      <div>
+        <h2>What is JavaScript?</h2>
+        <p>javaScript is a scripting language. which is used to add functionality to our webpage.and make our website dynamic. it is a single threaded language. which means it can performe a single line script at a time.</p>
+      </div>
+      <!--  -->
+      <div>
+        <h2>What is the use of isNaN function?</h2>
+        <p>The JavaScript isNaN() Function is used to check whether a given value is an illegal number or not. It returns true if the value is a NaN else returns false. It is different from the Number.isNaN() Method.</p>
+        <div class="img-box">
+          <img src="../Images/isNaN();.png" alt="" />
+        </div>
+      </div>
+      <!--  -->
+      <div>
+        <h2>What is negative Infinity?</h2>
+        <p>
+          The negative infinity in JavaScript is a constant value that is used to represent a value that is the lowest available. This means that no other number is lesser than this value. It can be generated using a self-made function or
+          by an arithmetic operation.
+        </p>
+      </div>
+      <!--  -->
+      <div>
+        <h2>Which company developed JavaScript?</h2>
+        <p>"JavaScript" is a trademark of Oracle Corporation in the United States. The trademark was originally issued to Sun Microsystems on 6 May 1997, and was transferred to Oracle when they acquired Sun in 2009.</p>
+      </div>
+      <!--  -->
+      <div>
+        <h2>What are undeclared and undefined variables?</h2>
+        <p>undefined: when we declare a variable but does not assign any value to it.</p>
+        <p>Undeclared: in which we have not declared any variable in our script.</p>
+      </div>
+      <!--  -->
+      <div>
+        <h2>Write the code for adding new elements dynamically?</h2>
+        <div class="img-box">
+          <img src="../Images/Declare.png" alt="" />
+        </div>
+      </div>
+      <!--  -->
+      <div>
+        <h2>What is the difference between ViewState and SessionState?</h2>
+
+        <h2>Session State</h2>
+        <p>
+          contains information that is pertaining to a specific session (by a particular client/browser/machine) with the server. It's a way to track what the user is doing on the site.. across multiple pages...amid the statelessness of the
+          Web. e.g. the contents of a particular user's shopping cart is session data. Cookies can be used for session state.
+        </p>
+
+        <h2>View State</h2>
+        <p>
+          on the other hand is information specific to particular web page. It is stored in a hidden field so that it isn't visible to the user. It is used to maintain the user's illusion that the page remembers what he did on it the last
+          time - dont give him a clean page every time he posts back.
+        </p>
+      </div>
+      <!--  -->
+      <div>
+        <h2>What is === operator?</h2>
+        <p>To compare the type of two variables this === operator is used.</p>
+      </div>
+      <!--  -->
+      <div>
+        <h2>How can the style/class of an element be changed?</h2>
+        <p>in script we can change style of any element by using style.css with DOM</p>
+        <div class="img-box"><img src="../Images/style.css.png" alt="" /></div>
+      </div>
+      <!--  -->
+      <div>
+        <h2>What are all the looping structures in JavaScript?</h2>
+        <p>For Loop</p>
+        <p>While Loop</p>
+        <p>Do While Loop</p>
+        <div class="imgs-wrap">
+          <div>
+            <img src="../Images/For-loop.png" alt="" />
+          </div>
+          <div>
+            <img src="../Images/while.png" alt="" />
+          </div>
+          <div>
+            <img src="../Images/Do,while.png" alt="" />
+          </div>
+        </div>
+      </div>
+      <!--  -->
+      <div>
+        <h2>What is the function of the delete operator?</h2>
+        <p>In JavaScript, the delete Operator’s main purpose is to remove a property from an object. In this article, we are going to learn about delete Operator in JavaScript.</p>
+
+        <div class="img-box"><img src="../Images/dlt.png" alt="" /></div>
+      </div>
+      <!--  -->
+      <div>
+        <h2>What are all the types of Pop up boxes available in JavaScript?</h2>
+        <p>there are Three type of POPUP boxes in javaScript</p>
+        <ol>
+          <li>alert();</li>
+          <li>Confirm();</li>
+          <li>Prompt();</li>
+        </ol>
+      </div>
+      <!--  -->
+      <div>
+        <h2>What is the use of Void (0)?</h2>
+        <p>
+          The void operator is often used merely to obtain the undefined primitive value, usually using “void(0)” (which is equivalent to “void 0”). In these cases, the global variable undefined can be used instead (assuming it has not been
+          assigned to a non-default value).
+        </p>
+      </div>
+      <!--  -->
+      <div>
+        <h2>How can a page be forced to load another page in JavaScript?</h2>
+        <p>: We can use window.location property inside the script tag to forcefully load another page in Javascript.</p>
+        <div class="img-box">
+          <img src="../Images/path.png" alt="" />
+        </div>
+      </div>
+      <!--  -->
+      <div>
+        <h2>What are the disadvantages of using innerHTML in JavaScript?</h2>
+        <p>
+          Inner HTML is slow because when we use the inner HTML property in the code it allows us to change using the JavaScript language. It is very slow because as inner HTML already parses the content even we have to parse the content
+          again so that’s why it takes time.
+        </p>
+        <p>
+          Event handlers attached to any DOM element are preserved When we have used the event handlers then the event handlers are not automatically attached to the new elements created by innerHTML. To change that, we have to track the.
+          event handlers and manually attach them to a new element. It means that first, we have to fetch the element property through innerHTML, and then we have to attach them to a new element
+        </p>
+      </div>
+      <!--  -->
+    </section>
+    <script>
+      let obj = { name: "arma", age: 21 };
+      console.log(delete obj.age);
+      console.log(obj);
+    </script>
+  </body>
+</html>

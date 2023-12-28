@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>calculator</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+      }
+      section {
+        /* height: 500px; */
+        width: 30%;
+        margin: 10% auto;
+        background-color: rgb(222, 217, 217);
+        text-align: center;
+        padding: 20px;
+        border-radius: 12px;
+        box-shadow: 2px 3px 11px #222;
+      }
+      label {
+        display: inline-block;
+        width: 100px;
+        text-align: right;
+        padding: 10px 20px;
+        font-size: 20px;
+      }
+      input {
+        max-width: 100%;
+        padding: 10px;
+        border: none;
+        border: 2px solid #222;
+        /* display: inline-block; */
+        background: #222;
+        opacity: 0.5;
+        color: aliceblue;
+        font-size: 15px;
+      }
+
+      .operators {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 20px;
+      }
+      .operators div {
+        width: 20%;
+      }
+      button {
+        width: 100%;
+        height: 70px;
+        font-size: 30px;
+        margin-top: 20px;
+      }
+      button:first-of-type {
+        background-color: black;
+        color: aliceblue;
+        border: none;
+        border-radius: 10px;
+      }
+      span {
+        background-color: rgba(255, 255, 249, 0.256);
+        width: 100%;
+        box-shadow: 3px 3px 1px #222;
+        height: 100px;
+        border-radius: 10px;
+        display: block;
+        padding: 10px 20px;
+        margin-top: 20px;
+        color: #222;
+        font-size: 30px;
+      }
+    </style>
+  </head>
+  <body>
+    <section>
+      <div><label for="fn">First </label> <input type="text" name="Fn" id="firstname" /></div>
+      <div><label for="fn">second </label> <input type="text" name="sn" id="secondname" /></div>
+      <div class="operators">
+        <div>
+          <button class="plus" onclick="add()">+</button>
+        </div>
+        <div>
+          <button class="minus" onclick="sub()">-</button>
+        </div>
+        <div>
+          <button class="into" onclick="mult()">*</button>
+        </div>
+        <div>
+          <button class="divide" onclick="divide()">/</button>
+        </div>
+      </div>
+      <div>
+        <span id="result" onclick="result()">Result</span>
+      </div>
+    </section>
+    <script>
+      //   addition
+      function add() {
+        let first_num = parseFloat(document.getElementById("firstname").value);
+        let second_num = parseFloat(document.getElementById("secondname").value);
+        let addition = first_num + second_num;
+        document.getElementById("result").innerText = addition;
+        console.log(addition);
+      }
+      // SUBTRACTION
+      function sub() {
+        let first_num = parseFloat(document.getElementById("firstname").value);
+        let second_num = parseFloat(document.getElementById("secondname").value);
+        let subtraction = first_num - second_num;
+        document.getElementById("result").innerText = subtraction;
+        console.log(subtraction);
+        x;
+      }
+      // MULTIPLICATION
+      function mult() {
+        let first_num = parseFloat(document.getElementById("firstname").value);
+        let second_num = parseFloat(document.getElementById("secondname").value);
+        let multiplication = first_num * second_num;
+        document.getElementById("result").innerText = multiplication;
+        console.log(multiplication);
+      }
+      // DIVISION
+      function divide() {
+        let first_num = parseFloat(document.getElementById("firstname").value);
+        let second_num = parseFloat(document.getElementById("secondname").value);
+        let division = first_num / second_num;
+        document.getElementById("result").innerText = division;
+        console.log(division);
+      }
+    </script>
+  </body>
+</html>
