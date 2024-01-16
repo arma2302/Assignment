@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>slider using animation</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      img {
+        width: 100%;
+      }
+      .main-wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+        flex-direction: column;
+        gap: 50px;
+      }
+      .slider-container {
+        /* width: 80%; */
+        width: 45%;
+        margin: 0 auto;
+        padding: 10px;
+        background-color: rgb(202, 211, 208);
+        position: relative;
+        height: 300px;
+        overflow: hidden;
+        border-radius: 20px 0px 20px 0px;
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px, rgb(51, 51, 51) 0px 0px 0px 3px;
+      }
+      .slider-wrapper {
+        display: flex;
+        justify-content: space-between;
+        position: absolute;
+        left: 29px;
+      }
+
+      .slider-item {
+        animation-name: slider;
+        width: 500px;
+        padding: 20px;
+        /* animation-play-state: paused; */
+        transition: all 0.5s ease;
+      }
+      .dots-wrapper {
+        display: flex;
+        gap: 10px;
+        position: absolute;
+        top: 62%;
+      }
+      .single-dot {
+        background-color: black;
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        opacity: 0.5;
+        cursor: pointer;
+      }
+      button {
+        background-color: black;
+        color: #fff;
+        padding: 10px 20px;
+        border-radius: 12px 0px 12px 0;
+        border: none;
+      }
+    </style>
+  </head>
+  <body>
+    <section>
+      <div class="main-wrapper">
+        <!-- slider container -->
+        <div class="slider-container">
+          <div class="slider-wrapper">
+            <!--items -->
+            <div class="slider-item animation">
+              <img src="../images/add-remove-class.png" alt="" />
+            </div>
+            <!--items -->
+
+            <div class="slider-item">
+              <img src="../images/css.png" alt="" />
+            </div>
+            <!--items -->
+
+            <div class="slider-item">
+              <img src="../images/animate.png" alt="" />
+            </div>
+          </div>
+        </div>
+        <!-- dots wrapper -->
+        <div class="dots-wrapper">
+          <!-- <div class="single-dot"></div>
+
+          <div class="single-dot"></div>
+          <div class="single-dot"></div> -->
+          <button class="prev">Prev</button>
+          <button class="next">Next</button>
+        </div>
+      </div>
+    </section>
+    <!-- Script added here -->
+    <script src="jquery-3.7.1.min.js"></script>
+    <!-- script starts here -->
+    <script>
+      $(document).ready(function () {
+        let a = true;
+        // click on the dot
+        $(".next").click(function () {
+          //animate wrapper
+          //   if  a is true
+          if (a) {
+            $(".slider-wrapper").animate({
+              left: "-85%",
+            });
+            console.log("if is called");
+          }
+          //   else
+          else {
+            $(".slider-wrapper").animate({
+              left: "-175%",
+            });
+            console.log("else is called");
+          }
+          a = !a;
+        });
+        // click on the prev
+        $(".prev").click(function () {
+          //animate wrapper
+          //   if  a is true
+          if (a) {
+            $(".slider-wrapper").animate({
+              left: "5%",
+            });
+            console.log("if is called");
+          }
+          //   else
+          else {
+            $(".slider-wrapper").animate({
+              left: "7%",
+            });
+            console.log("else is called");
+          }
+          a = !a;
+        });
+      });
+    </script>
+  </body>
+</html>
