@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BubbleingTickling</title>
+    <style>
+      * {
+        padding: 20px;
+        margin: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="great-great-grandparent">
+      great-great-grandparent
+      <div class="great-grand-paraent">
+        great-grand-paraent
+        <div class="great-grand-parent">
+          great-grand-parent
+          <div class="grand-parent">
+            grand-parent
+            <div class="parent">
+              parent
+              <div class="child">child</div>
+              <div class="child">child</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- jquery added here -->
+    <script src="jquery-3.7.1.min.js"></script>
+    <!-- script starts here -->
+    <script>
+      $(document).ready(function () {
+        $(".child").parent().css({ border: "2px solid red" });
+        $(".parent").parent().css({ border: "2px solid blue" });
+        $(".grand-parent").parent().css({ border: "2px solid black" });
+        $(".great-grand-parent").parent().css({ border: "2px solid red" });
+        $(".great-great-grandparent").parent().css({ border: "2px solid pink" });
+        $(".great-great-grandparent").parent().css({ border: "2px solid green" });
+        $(".great-great-grandparent").parent().css({ border: "2px solid brown" });
+        $("body").parent().css({ border: "2px solid red" });
+        $(".parent").children().css({ border: "2px solid green" });
+      });
+    </script>
+  </body>
+</html>
